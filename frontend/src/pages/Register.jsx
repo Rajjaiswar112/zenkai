@@ -40,24 +40,24 @@ export default function Register() {
 
                     <form onSubmit={submit} className="space-y-6">
                         <div>
-                            <label className="block font-mono text-[10px] uppercase tracking-widest text-zinc-500 mb-2">Display Name</label>
+                            <label className="block font-mono text-[20px] uppercase tracking-widest text-zinc-500 mb-5">Display Name</label>
                             <div className="relative">
-                                <User className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500" strokeWidth={1.5} />
-                                <input required value={name} onChange={(e) => setName(e.target.value)} className="input-neon pl-10" placeholder="Otaku_2026" data-testid="register-name" />
+                                <User className="absolute left- top-1/2 -translate-y-2 w-4 h-4 text-zinc-500" strokeWidth={2} />
+                                <input required value={name} onChange={(e) => setName(e.target.value)} className="input-neon pl-9" placeholder= " Otaku_2026" data-testid="register-name" />
                             </div>
                         </div>
                         <div>
-                            <label className="block font-mono text-[10px] uppercase tracking-widest text-zinc-500 mb-2">Email</label>
+                            <label className="block font-mono text-[20px] uppercase tracking-widest text-zinc-500 mb-2">Email</label>
                             <div className="relative">
-                                <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500" strokeWidth={1.5} />
-                                <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)} className="input-neon pl-10" placeholder="you@example.com" data-testid="register-email" />
+                                <Mail className="absolute left-25 top-1/2 -translate-y-2 w-4 h-4 text-zinc-500" strokeWidth={1.5} />
+                                <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)} className="input-neon pl-9" placeholder=" you@example.com" data-testid="register-email" />
                             </div>
                         </div>
                         <div>
-                            <label className="block font-mono text-[10px] uppercase tracking-widest text-zinc-500 mb-2">Password</label>
+                            <label className="block font-mono text-[20px] uppercase tracking-widest text-zinc-500 mb-2">Password</label>
                             <div className="relative">
-                                <Lock className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500" strokeWidth={1.5} />
-                                <input type="password" required value={password} onChange={(e) => setPassword(e.target.value)} className="input-neon pl-10" placeholder="min 6 chars" data-testid="register-password" />
+                                <Lock className="absolute left-15 top-1/2 -translate-y-2 w-4 h-4 text-zinc-500" strokeWidth={1.5} />
+                                <input type="password" required value={password} onChange={(e) => setPassword(e.target.value)} className="input-neon pl-10" placeholder=" min 6 chars" data-testid="register-password" />
                             </div>
                         </div>
                         <button type="submit" disabled={loading} className="btn-neon w-full" data-testid="register-submit">
