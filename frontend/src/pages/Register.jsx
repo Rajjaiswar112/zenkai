@@ -38,7 +38,7 @@ export default function Register() {
                     <h1 className="font-heading text-3xl uppercase tracking-tight text-white mb-1">Join the Grid</h1>
                     <p className="text-zinc-500 font-body text-sm mb-6">Create your Zenkai account.</p>
 
-                    <form onSubmit={submit} className="space-y-4">
+                    <form onSubmit={submit} className="space-y-6">
                         <div>
                             <label className="block font-mono text-[10px] uppercase tracking-widest text-zinc-500 mb-2">Display Name</label>
                             <div className="relative">
