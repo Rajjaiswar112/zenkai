@@ -197,8 +197,7 @@ export default function Login() {
                         >
                             Create one
                         </Link>
-                    </div>
-                </div>
+                    </div>                </div>
             </div>
         </main>
     );
