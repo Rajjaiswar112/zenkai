@@ -28,7 +28,7 @@ export default function CartDrawer({ open, onClose }) {
             <aside className={`fixed top-0 right-0 h-full w-full sm:w-[440px] bg-[#0a0a0f] border-l border-white/10 z-50 transform transition-transform duration-300 flex flex-col ${open ? 'translate-x-0' : 'translate-x-full'}`} data-testid="cart-drawer">
                 <div className="p-5 border-b border-white/5 flex items-center justify-between">
                     <div>
-                        <div className="font-mono text-[10px] uppercase tracking-[0.3em] text-neon-cyan">// cart_module</div>
+                        <div className="font-mono text-[10px] uppercase tracking-[0.3em] text-neon-cyan">{"// cart_module"}</div>
                         <h3 className="font-heading text-2xl uppercase tracking-tight text-white">Your Cart {count > 0 && <span className="text-neon-purple">({count})</span>}</h3>
                     </div>
                     <button onClick={onClose} className="p-2 hover:text-neon-magenta transition-colors" data-testid="cart-close"><X className="w-5 h-5" strokeWidth={1.5} /></button>

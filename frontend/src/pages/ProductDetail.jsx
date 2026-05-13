@@ -4,7 +4,7 @@ import { api, categoryName, formatPrice, errMsg } from "../lib/api";
 import { useCart } from "../context/CartContext";
 import { useWishlist } from "../context/WishlistContext";
 import { useAuth } from "../context/AuthContext";
-import { Heart, ShoppingCart, Plus, Minus, ChevronRight, Zap, Truck, Shield, Sparkles } from "lucide-react";
+import { Heart, ShoppingCart, Plus, Minus, ChevronRight, Truck, Shield, Sparkles } from "lucide-react";
 import { toast } from "sonner";
 import ProductCard from "../components/ProductCard";
 
@@ -68,13 +68,13 @@ export default function ProductDetail() {
                     <div>
                         <div className="font-mono text-xs uppercase tracking-[0.3em] text-neon-cyan mb-2" data-testid="product-category">{categoryName(p.category)}</div>
                         <h1 className="font-heading text-4xl sm:text-5xl uppercase tracking-tight text-white mb-3" data-testid="product-name">{p.name}</h1>
-                        {p.anime && <div className="font-body text-zinc-400 text-sm uppercase tracking-widest">// {p.anime}</div>}
+                        {p.anime && <div className="font-body text-zinc-400 text-sm uppercase tracking-widest">{"// "}{p.anime}</div>}
                     </div>
 
                     <div className="flex items-baseline gap-4 border-y border-white/5 py-5">
                         <div className="font-mono text-4xl text-neon-purple" data-testid="product-price">{formatPrice(p.price)}</div>
                         <div className="font-mono text-xs uppercase tracking-widest text-zinc-500">
-                            {p.stock > 0 ? <span className="text-neon-cyan">// in stock — {p.stock} units</span> : <span className="text-neon-magenta">// out of stock</span>}
+                            {p.stock > 0 ? <span className="text-neon-cyan">{"// in stock — "}{p.stock}{" units"}</span> : <span className="text-neon-magenta">{"// out of stock"}</span>}
                         </div>
                     </div>
 
@@ -124,7 +124,7 @@ export default function ProductDetail() {
             {/* Related */}
             {related.length > 0 && (
                 <section className="mt-20 pt-10 border-t border-white/5">
-                    <div className="font-mono text-xs uppercase tracking-[0.3em] text-neon-cyan mb-2">// related_items</div>
+                    <div className="font-mono text-xs uppercase tracking-[0.3em] text-neon-cyan mb-2">{"// related_items"}</div>
                     <h2 className="font-heading text-3xl uppercase tracking-tight text-white mb-8">You May Also Like</h2>
                     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-5">
                         {related.map(r => <ProductCard key={r.id} product={r} />)}

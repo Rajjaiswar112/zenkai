@@ -59,7 +59,7 @@ export default function Home() {
                     <div className="lg:col-span-7 space-y-6 animate-fade-up">
                         <div className="inline-flex items-center gap-2 px-3 py-1.5 glass border border-neon-purple/30">
                             <span className="w-2 h-2 bg-neon-cyan rounded-full animate-pulse" />
-                            <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-neon-cyan">// new_drop_2026.04.01</span>
+                            <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-neon-cyan">{"// new_drop_2026.04.01"}</span>
                         </div>
                         <h1 className="font-heading text-5xl sm:text-7xl lg:text-8xl font-bold uppercase tracking-tighter leading-[0.85] text-white" data-testid="hero-title">
                             Power Your<br />
@@ -126,7 +126,7 @@ export default function Home() {
                             <img src={categories[0].image} alt={categories[0].name} className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700" />
                             <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent" />
                             <div className="absolute bottom-0 left-0 p-6 sm:p-8">
-                                <div className="font-mono text-xs text-neon-cyan uppercase tracking-widest mb-2">// 01 / category</div>
+                                <div className="font-mono text-xs text-neon-cyan uppercase tracking-widest mb-2">{"// 01 / category"}</div>
                                 <h3 className="font-heading text-3xl sm:text-4xl uppercase tracking-tight text-white mb-2">{categories[0].name}</h3>
                                 <p className="text-zinc-400 text-sm max-w-xs mb-4">{categories[0].description}</p>
                                 <div className="inline-flex items-center gap-2 text-neon-purple font-heading uppercase tracking-widest text-xs group-hover:gap-3 transition-all">
@@ -140,7 +140,7 @@ export default function Home() {
                             <img src={c.image} alt={c.name} className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700" />
                             <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/30 to-transparent" />
                             <div className="absolute bottom-0 left-0 p-4">
-                                <div className="font-mono text-[10px] text-neon-cyan uppercase tracking-widest mb-1">// 0{i+2}</div>
+                                <div className="font-mono text-[10px] text-neon-cyan uppercase tracking-widest mb-1">{"// 0"}{i+2}</div>
                                 <h3 className="font-heading text-lg sm:text-xl uppercase tracking-tight text-white">{c.name}</h3>
                             </div>
                         </Link>

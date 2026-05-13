@@ -34,7 +34,7 @@ export default function Login() {
                 </Link>
 
                 <div className="glass-elevated p-8 sm:p-10" data-testid="login-form">
-                    <div className="font-mono text-[10px] uppercase tracking-[0.3em] text-neon-cyan mb-2">// authentication</div>
+                    <div className="font-mono text-[10px] uppercase tracking-[0.3em] text-neon-cyan mb-2">{"// authentication"}</div>
                     <h1 className="font-heading text-3xl uppercase tracking-tight text-white mb-1">Access</h1>
                     <p className="text-zinc-500 font-body text-sm mb-6">Enter the grid — your collection awaits.</p>
 

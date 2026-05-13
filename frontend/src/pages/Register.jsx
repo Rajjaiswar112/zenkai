@@ -34,7 +34,7 @@ export default function Register() {
                 </Link>
 
                 <div className="glass-elevated p-8 sm:p-10" data-testid="register-form">
-                    <div className="font-mono text-[10px] uppercase tracking-[0.3em] text-neon-cyan mb-2">// new_user</div>
+                    <div className="font-mono text-[10px] uppercase tracking-[0.3em] text-neon-cyan mb-2">{"// new_user"}</div>
                     <h1 className="font-heading text-3xl uppercase tracking-tight text-white mb-1">Join the Grid</h1>
                     <p className="text-zinc-500 font-body text-sm mb-6">Create your Zenkai account.</p>
 

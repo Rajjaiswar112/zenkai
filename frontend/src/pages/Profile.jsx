@@ -19,7 +19,7 @@ export default function Profile() {
     return (
         <main className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12" data-testid="profile-page">
             <div className="mb-10 pb-6 border-b border-white/5">
-                <div className="font-mono text-xs uppercase tracking-[0.3em] text-neon-cyan mb-2">// user_console</div>
+                <div className="font-mono text-xs uppercase tracking-[0.3em] text-neon-cyan mb-2">{"// user_console"}</div>
                 <h1 className="font-heading text-4xl sm:text-5xl uppercase tracking-tight text-white">My Account</h1>
             </div>
 
@@ -62,7 +62,7 @@ export default function Profile() {
                             ) : orders.map(o => (
                                 <div key={o.id} className="glass p-5 flex items-center justify-between gap-4" data-testid={`order-${o.id}`}>
                                     <div className="min-w-0 flex-1">
-                                        <div className="font-mono text-[10px] text-zinc-500 uppercase tracking-widest">// {o.id.slice(0, 8)}</div>
+                                        <div className="font-mono text-[10px] text-zinc-500 uppercase tracking-widest">{"// "}{o.id.slice(0, 8)}</div>
                                         <div className="font-heading text-sm uppercase tracking-tight text-white truncate">{(o.summary || []).join(" / ") || `${(o.items || []).length} items`}</div>
                                         <div className="font-mono text-xs text-zinc-400 mt-1">{new Date(o.created_at).toLocaleString()}</div>
                                     </div>
