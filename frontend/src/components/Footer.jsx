@@ -28,7 +28,7 @@ export default function Footer() {
             <div className="border-b border-white/5">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid lg:grid-cols-2 gap-10 items-center">
                     <div>
-                        <div className="text-neon-cyan font-mono text-xs uppercase tracking-[0.3em] mb-3">// transmission_01</div>
+                        <div className="text-neon-cyan font-mono text-xs uppercase tracking-[0.3em] mb-3">{"// transmission_01"}</div>
                         <h3 className="font-heading text-3xl sm:text-4xl uppercase tracking-tight text-white mb-3">Join the Resistance</h3>
                         <p className="text-zinc-400 max-w-md">Drop your email — get exclusive drops, neon arrivals & early access to limited collectibles.</p>
                     </div>
@@ -58,9 +58,9 @@ export default function Footer() {
                     </Link>
                     <p className="text-zinc-400 max-w-sm mb-4">Power Your Anime World. Premium acrylic art, LED frames, and neon collectibles for the next generation of otaku.</p>
                     <div className="flex gap-3">
-                        <a href="#" className="p-2 border border-white/10 hover:border-neon-purple hover:text-neon-purple transition-colors" data-testid="social-twitter"><Twitter className="w-4 h-4" strokeWidth={1.5} /></a>
-                        <a href="#" className="p-2 border border-white/10 hover:border-neon-purple hover:text-neon-purple transition-colors" data-testid="social-instagram"><Instagram className="w-4 h-4" strokeWidth={1.5} /></a>
-                        <a href="#" className="p-2 border border-white/10 hover:border-neon-purple hover:text-neon-purple transition-colors" data-testid="social-github"><Github className="w-4 h-4" strokeWidth={1.5} /></a>
+                        <a href="/" className="p-2 border border-white/10 hover:border-neon-purple hover:text-neon-purple transition-colors" data-testid="social-twitter"><Twitter className="w-4 h-4" strokeWidth={1.5} /></a>
+                        <a href="/" className="p-2 border border-white/10 hover:border-neon-purple hover:text-neon-purple transition-colors" data-testid="social-instagram"><Instagram className="w-4 h-4" strokeWidth={1.5} /></a>
+                        <a href="/" className="p-2 border border-white/10 hover:border-neon-purple hover:text-neon-purple transition-colors" data-testid="social-github"><Github className="w-4 h-4" strokeWidth={1.5} /></a>
                     </div>
                 </div>
 
@@ -80,9 +80,9 @@ export default function Footer() {
                     <ul className="space-y-2 text-sm text-zinc-400">
                         <li><Link to="/shop" className="hover:text-neon-cyan transition-colors">All Products</Link></li>
                         <li><Link to="/profile" className="hover:text-neon-cyan transition-colors">My Account</Link></li>
-                        <li><a href="#" className="hover:text-neon-cyan transition-colors">Shipping</a></li>
-                        <li><a href="#" className="hover:text-neon-cyan transition-colors">Returns</a></li>
-                        <li><a href="#" className="hover:text-neon-cyan transition-colors">Contact</a></li>
+                        <li><a href="/" className="hover:text-neon-cyan transition-colors">Shipping</a></li>
+                        <li><a href="/" className="hover:text-neon-cyan transition-colors">Returns</a></li>
+                        <li><a href="/" className="hover:text-neon-cyan transition-colors">Contact</a></li>
                     </ul>
                 </div>
             </div>

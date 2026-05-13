@@ -73,7 +73,7 @@ export default function Admin() {
         <main className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10" data-testid="admin-page">
             <div className="mb-8 pb-6 border-b border-white/5 flex items-end justify-between flex-wrap gap-4">
                 <div>
-                    <div className="font-mono text-xs uppercase tracking-[0.3em] text-neon-magenta mb-2">// admin_console</div>
+                    <div className="font-mono text-xs uppercase tracking-[0.3em] text-neon-magenta mb-2">{"// admin_console"}</div>
                     <h1 className="font-heading text-4xl sm:text-5xl uppercase tracking-tight text-white">Control Grid</h1>
                 </div>
                 <div className="flex gap-2 flex-wrap">

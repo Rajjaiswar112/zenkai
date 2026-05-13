@@ -38,7 +38,7 @@ export default function Success() {
                         <div className="w-20 h-20 mx-auto mb-6 border border-neon-cyan flex items-center justify-center glow-cyan">
                             <Check className="w-10 h-10 text-neon-cyan" strokeWidth={1.5} />
                         </div>
-                        <div className="font-mono text-xs uppercase tracking-[0.3em] text-neon-cyan mb-2">// payment_confirmed</div>
+                        <div className="font-mono text-xs uppercase tracking-[0.3em] text-neon-cyan mb-2">{"// payment_confirmed"}</div>
                         <h1 className="font-heading text-4xl sm:text-5xl uppercase tracking-tight text-white mb-3" data-testid="success-title">Order Confirmed</h1>
                         <p className="text-zinc-400 font-body max-w-md mx-auto mb-6">
                             Your payment of <span className="text-neon-purple font-mono">{formatPrice((status.amount_total || 0) / 100)}</span> was successful. Your transmission is now in the queue.
@@ -61,7 +61,7 @@ export default function Success() {
                     <>
                         <Loader2 className="w-12 h-12 text-neon-purple mx-auto mb-6 animate-spin" strokeWidth={1.5} />
                         <h1 className="font-heading text-3xl uppercase tracking-tight text-white mb-2">Verifying payment</h1>
-                        <p className="text-zinc-500 font-mono text-xs uppercase tracking-widest" data-testid="polling-status">// polling.gateway... ({attempts + 1}/12)</p>
+                        <p className="text-zinc-500 font-mono text-xs uppercase tracking-widest" data-testid="polling-status">{"// polling.gateway... ("}{attempts + 1}{"/12)"}</p>
                     </>
                 )}
             </div>

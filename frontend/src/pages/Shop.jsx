@@ -37,7 +37,7 @@ export default function Shop() {
     return (
         <main className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12" data-testid="shop-page">
             <div className="mb-10 pb-6 border-b border-white/5">
-                <div className="font-mono text-xs uppercase tracking-[0.3em] text-neon-cyan mb-2">// shop_catalog</div>
+                <div className="font-mono text-xs uppercase tracking-[0.3em] text-neon-cyan mb-2">{"// shop_catalog"}</div>
                 <h1 className="font-heading text-4xl sm:text-6xl uppercase tracking-tight text-white" data-testid="shop-title">
                     {category ? categoryName(category) : search ? `Results: ${search}` : "All Products"}
                 </h1>
